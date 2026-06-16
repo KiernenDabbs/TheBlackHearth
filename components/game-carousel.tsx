@@ -2,12 +2,12 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselPrevious, 
-  CarouselNext 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext
 } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -78,7 +78,7 @@ export function GameCarousel() {
                 <Card className={`group relative h-full overflow-hidden bg-card border ${game.borderColor} hover:border-violet-500/50 transition-all duration-500`}>
                   {/* Background Image */}
                   <div className="absolute inset-0">
-                    <Image 
+                    <Image
                       src={game.image}
                       alt={game.title}
                       fill
@@ -88,7 +88,7 @@ export function GameCarousel() {
                     <div className={`absolute inset-0 ${game.overlayColor} transition-opacity duration-500`} />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
                   </div>
-                  
+
                   <CardContent className="relative p-6 flex flex-col h-full min-h-[380px] justify-end">
                     {/* Content */}
                     <h3 className="font-[family-name:var(--font-one-slice)] text-3xl text-foreground mb-2 tracking-wide drop-shadow-lg">
@@ -102,8 +102,8 @@ export function GameCarousel() {
                     </p>
 
                     {/* CTA */}
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className="w-full justify-between border-foreground/20 text-foreground hover:bg-foreground/10 hover:border-violet-500/50 group/btn"
                       asChild
                     >
