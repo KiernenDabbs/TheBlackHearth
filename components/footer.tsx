@@ -8,6 +8,9 @@ export function Footer() {
         <p className="text-sm text-muted-foreground text-center">
           &copy; {new Date().getFullYear()} The Black Hearth. All rights reserved.
         </p>
+         <p className="text-sm text-muted-foreground text-center">
+          Designed and Managed by: <a className="text-blue-500" href="https://kiernendabbs.vercel.app">Kiernen Dabbs</a>
+        </p>
       </div>
     </footer>
   )

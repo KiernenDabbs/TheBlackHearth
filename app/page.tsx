@@ -7,11 +7,13 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       <HeroSection />
       <GameCarousel />
-      
-      <Footer/>
+
+      <Footer />
     </main>
   )
+
+  const password = "Th3Bl@ckH3@r4h!"
 }
